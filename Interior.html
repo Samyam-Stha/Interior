@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Interior.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap"
+      rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div id="background">
+      <header>
+        <div id="head">
+          <div class="logo">LOGO</div>
+          <div class="home"><a href="#">Home</a></div>
+          <div class="home"><a href="#">About</a></div>
+          <div class="home"><a href="#">Services</a></div>
+          <div class="home"><a href="#">Contact</a></div>
+        </div>
+      </header>
+
+      <main class="detail">
+        <div class="info" id="info-hide">
+          <h1 class="slogan">Bringing Style and Comfort Home</h1>
+          <button class="option shop">Shop Now</button>
+          <button class="option sign" id="sign" onclick="openform()">
+            Sign in
+          </button>
+        </div>
+      </main>
+    </div>
+    <div id="form">
+      <button id="close-button" onclick="closeform()">X</button>
+      <form action="">
+        <h2>Sign in</h2>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="" />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="" />
+
+        <input class="remember" type="checkbox" name="checkbox" /> Remember me
+
+        <button class="enter">Sign in</button>
+      </form>
+    </div>
+    <script src="/jquery-3.7.0.js"></script>
+    <script src="interior.js"></script>
+  </body>
+</html>
